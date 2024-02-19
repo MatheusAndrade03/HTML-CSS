@@ -1,0 +1,70 @@
+@charset 'Utf-8';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Riot&display=swap');
+
+body{
+
+    background-color: aliceblue;
+}
+header{
+    background-color: #18BAF0;
+    padding: 10px;
+}
+nav{
+    background-color: aliceblue;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    box-shadow: 1px 1px 10px black;
+
+    border-radius: 30px;
+    
+
+}
+nav>a{
+    margin-right: 30px;
+    text-decoration: none;
+}
+nav>a:hover{
+    color: #18BAF0;
+    text-decoration: underline;
+}
+#champ{
+    color: #18BAF0;
+    box-shadow: 1px 1px 10px black;
+    font-size:60px;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+main{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Viego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: rgb(7, 158, 108);
+    padding: 30px;
+    border-radius: 30px;
+}
+#Ekko{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    background-color: rgb(8, 139, 214);
+    padding: 30px 95px;
+    border-radius: 30px;
+}
+.tit{
+    font-family: "Protest Riot", sans-serif;
+}

@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+
+
+#titulo{
+
+    background-color: aqua;
+   
+}
+
+.conteudo{
+    color: aliceblue;
+    background-color: black;
+
+}
+body{
+
+    background-color: blanchedalmond;
+}
