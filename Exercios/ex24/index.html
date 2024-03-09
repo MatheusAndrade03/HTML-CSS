@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        fieldset {
+            width: 200px;
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
+
 <body>
 
     <h1>Formularios</h1>
 
-    <form autocomplete="off" action="">
-        <p><label for="inome">Nome:</label>  <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobre">Sobrenome:</label>  <input type="text" name="sobre" id="isobre"></p>
-        <input type="submit" value="Enter">
+    <form autocomplete="off" action="casdastro.php" method="GET">
+        <fieldset>
+            <legend>Formulario</legend>
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required minlength="5"></p>
+            <p><label for="isobre">Sobrenome:</label> <input type="password" name="sobre" id="isobre" required
+                    minlength="5"></p>
+            <p> <label for="iemail"> email</label> <input type="email" name="email" id="iemail" required
+                    autocomplete="email"></p>
+            <p> <label for="itel">Telefone</label> <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+            <p>
+                <label for="itime">Tempo</label>
+                <input type="time" name="
+                time" id="itime">
+            </p>
+            <p><input type="radio" name="sexo" id="sxmasculino">Masculino
+                <input type="radio" name="sexo" id="sxfeminino">Feminino
+            </p>
+            <p>
+                <input type="checkbox" name="Estudante" id="iestudante">Estudante <br>
+                <input type="checkbox" name="Trabalhador" id="itrabalhador">Trabalhador <br>
+                <input type="checkbox" name="Herdeiro" id="iherdeiro">Herdeiro
+            </p>
+            <p><label for="iestado">Estado</label>
+                <select name="estado" id="iestado">
+
+
+                    <optgroup label="Sul">
+                        <option value="RS">Rio grande do sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Parana</option>
+                    </optgroup>
+                    <optgroup label="SUlDeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeriro</option>
+                    </optgroup>
+
+                </select>
+
+
+                <label for="imsg">Mensagem </label>
+                <textarea name="Msg" id="imsg" cols="10" rows="10"></textarea>
+
+                <label for="lingua"> Linguagem</label>
+                <input type="text" name="lingua" id="lingua" list="ilingua">
+
+                <datalist id="ilingua" >
+                    <option value="pt">Portugues</option>
+                    <option value="ing">Ingles</option>
+                </datalist>
+
+            </p>
+            
+            <input type="submit" value="Enter">
+            <input type="reset" value="resetar">
+        </fieldset>
+
+
     </form>
-    
+    <p>
+        <label for="inumero1"> Numero 1:</label>
+        <input type="number" name="Numero1" id="inumero1"
+        oninput="isoma.innerHTML=Number(inumero1.value)+Number(inumero2.value)">
+    </p>
+    <p>
+        <label for="inumero2"> Numero 2:</label>
+        <input type="number" name="Numero2" id="inumero2"
+        oninput="isoma.innerHTML = Number(inumero1.value)+Number(inumero2.value)">
+    </p>
+
+    <p>
+        <label for="isoma">soma:</label>
+        <output id="isoma" name="soma">0</output>
+    </p>
+
+
+
+
+
 </body>
+
 </html>
