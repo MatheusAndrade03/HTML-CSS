@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2em;
+
+}
+header{
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    text-align: center;
+    
+
+}
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+menu{
+
+    margin-top: 20px;
+ 
+    background-color: rgba(71, 71, 71, 0.658);
+
+    
+
+}
+li{
+    
+    border: 1px solid black;
+    margin-left: 30px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+menu>ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+
+
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+
+
+}
