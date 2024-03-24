@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="" autocomplete="off">
+
+        <p>
+            <label for="itxtnome"> Nome Completo :</label>
+            <input type="text" name="txtnome" id="itxtnome" required>
+
+        </p>
+        <p>
+
+            <label for="inumberidade">Idade:</label>
+            <input type="number" name="numberidade" id="inumberidade" required minlength="2" min="18" max="120">
+        </p>
+        <p>
+            <label for="iEmail">E-mail:</label>
+            <input type="email" name="email" id="iEmail" required placeholder="insira um e-mail válido">
+        </p>
+        <p>
+            <label for="conteudo">Conteudo de maior Interesse:</label>
+            <br>
+            <select name="conteudo" id="conteudo">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
+        </p>
+        <p>
+            <label for="txtfield">Deixe sua Opnião:</label>
+            <br>
+            <textarea name="txtfield" id="txtfield" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="senha">senha:</label>
+            <input type="password" name="senha" id="senha" required>
+        </p>
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+
+
+</body>
+
+</html>
