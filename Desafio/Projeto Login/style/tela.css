@@ -30,8 +30,8 @@ main{
 #login{
 
 background-color: white;
-width: 250px;
-height: 500px;
+width: 300px;
+height: 600px;
 border-radius: 20px;
 
 
@@ -49,6 +49,73 @@ border: 1px solid black;
 box-shadow: 1px 1px 1px black;
 
 }
+
 #formulario{
-    padding: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    
+}
+#formulario>form{
+    width: 100%;
+}
+#formulario> p{
+    padding-top: 10px;
+}
+
+#formulario>form>p{
+    padding-top: 10px;
+}
+
+
+p.campo>label{
+    display: none;
+}
+
+
+#botoes{
+    display: flex ;
+    flex-direction: column
+    ;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+#botaoEntrar{
+    
+    padding-top: 10px;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #a87a6f;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+#botaoEntrar:hover{
+    background-color: #5f3a36;
+
+}
+#botaoEsqueciSenha{
+padding-top: 10px;
+width: 100%;
+height: 40px;
+border: 1px solid black;
+border-radius: 30px;
+
+text-decoration: none;
+
+color: #5f3a36;
+
+
+}
+#botaoEsqueciSenha:hover{
+    background-color: #5f3a36;
+    color: white;
 }
